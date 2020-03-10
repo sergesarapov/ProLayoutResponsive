@@ -15,28 +15,28 @@ html {
 
 h1 {
   font-family: myriad-pro,sans-serif;
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 28px;
+  line-height: 34px;
   color: #363636;
 }
 
 h2 {
   font-family: myriad-pro,sans-serif;
-  font-size: 36px;
-  line-height: 43px;
+  font-size: 24px;
+  line-height: 29px;
   color: #363636;
 }
 
 h3 {
   font-family: myriad-pro,sans-serif;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 p {
   font-family: myriad-pro,sans-serif;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 12px;
+  line-height: 14px;
   font-weight: 400;
   color: #363636;
 }
@@ -92,14 +92,11 @@ a:visited {
 }
 
 .action h1 {
-  font-size: 32px;
-  line-height: 38px;
   margin-top: 21px;
   margin-bottom: 8px;
 }
 
 .action h2 {
-  font-size: 24px;
   margin-bottom: 8px;
 }
 
@@ -148,12 +145,10 @@ a:visited {
 }
 
 .about h3 {
-  font-size: 18px;
   margin-bottom: 10px;
 }
 
 .about p {
-  font-size: 12px;
   margin-bottom: 12px;
   padding: 0 21px;
 }
@@ -174,15 +169,11 @@ a:visited {
 }
 
 .step h3 {
-  font-size: 26px;
-  line-height: 21px;
   margin-bottom: 8px;
   padding: 0 20px;
 }
 
 .step p {
-  font-size: 14px;
-  line-height: 17px;
   margin-bottom: 42px;
   padding: 0 20px;
 }
@@ -219,8 +210,6 @@ a:visited {
 }
 
 .mini-action h2 {
-  font-size: 24px;
-  line-height: 29px;
   margin-bottom: 9px;
   padding: 0 20px;
 }
@@ -234,8 +223,6 @@ a:visited {
 }
 
 .callback h1 {
-  font-size: 28px;
-  line-height: 34px;
   text-transform: uppercase;
   color: white;
   margin-bottom: 11px;
@@ -243,8 +230,6 @@ a:visited {
 }
 
 .callback p {
-  font-size: 14px;
-  line-height: 13px;
   color: white;
   margin-bottom: 14px;
   padding: 0 20px;
@@ -267,30 +252,64 @@ a:visited {
   margin-bottom: 7px;
 }
 
+.callback__button:hover {
+  background-color: #FCE39C;
+}
+
 .callback .personal-check {
   font-size: 10px;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
-.callback .personal-check input {
+.callback .personal-check .checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+
+.callback .personal-check .checkbox + label {
+  position: relative;
+  padding: 0 0 0 15px;
+  cursor: pointer;
+}
+
+.callback .personal-check .checkbox + label:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 9px;
+  height: 9px;
   background-color: #008DCD;
   border: 1px solid white;
 }
 
+.callback .personal-check .checkbox:checked + label:before {
+  background-color: #FFCC00;
+}
+
 .feedback {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   padding-bottom: 20px;
 }
 
-.feedback .arrow-left {
+.feedback__container {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-left {
   margin-left: 22px;
   margin-right: 8px;
   color: #B3B3B3;
 }
 
-.feedback .arrow-right {
+.arrow-right {
   margin-right: 12px;
   margin-left: 8px;
   color: #B3B3B3;
@@ -302,7 +321,8 @@ a:visited {
 }
 
 .title {
-  font-size: 28px;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 .review {
@@ -345,8 +365,6 @@ a:visited {
 }
 
 .pros__title {
-  font-size: 28px;
-  line-height: 34px;
   margin-left: 20px;
 }
 
@@ -377,4 +395,182 @@ a:visited {
   font-size: 10px;
   font-weight: lighter;
   text-align: center;
+}
+
+.guarantee {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.guarantee__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.guarantee h1 {
+  margin: 20px 20px;
+}
+
+.guarantee__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E1E1E1;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.image-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.image-title h3 {
+  width: 100px;
+}
+
+.guarantee__button {
+  margin: 20px 0;
+}
+
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #94D1EC;
+  padding-bottom: 25px;
+}
+
+.faq h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.faq__question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80px;
+  border-radius: 32px;
+  background-color: white;
+  padding: 0 20px;
+  margin: 5px 0;
+}
+
+.faq-chevron {
+  color: #008DCD;
+  margin-left: 10px;
+}
+
+.partners {
+  display: flex;
+  align-items: center;
+}
+
+.partners .logos {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #E1E1E1;
+}
+
+.footer h3 {
+  margin: 12px 20px;
+}
+
+.footer form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer form input {
+  margin-bottom: 10px;
+  height: 40px;
+  background-color: #E1E1E1;
+}
+
+.footer form input::placeholder {
+  color: black;
+}
+
+.footer .footer__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+
+.footer .footer__checkbox + label {
+  position: relative;
+  padding: 0 0 0 15px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.footer .footer__checkbox + label:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  background-color: #E1E1E1;
+  border: 1px solid white;
+}
+
+.footer .footer__checkbox:checked + label:before {
+  background-color: #008DCD;
+}
+
+.footer__button {
+  margin-bottom: 12px;
+}
+
+.footer__personal-check {
+  margin: 0px 0px 10px 20px;
+}
+
+.footer__nav {
+  border-top: 1px solid #B3B3B3;
+  border-bottom: 1px solid #B3B3B3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer__nav .footer__logo {
+  margin: 20px;
+}
+
+.footer__nav .footer__burger {
+  padding: 20px;
+}
+
+.footer__nav .footer__burger .footer__b {
+  color: black;
+}
+
+.footer__copywrite {
+  font-size: 10px;
+  font-weight: 400;
+  margin: 18px 0px 10px 20px;
 }

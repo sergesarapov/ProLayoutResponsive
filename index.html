@@ -15,7 +15,7 @@
   <body>
     <header class="header center">
       <div class="logo header__logo">
-        <img src="img/logo-white.png" alt="logo" />
+        <a href="index.html"><img src="img/logo-white.png" alt="logo"/></a>
       </div>
       <a href="#" class="header__burger"><i class="burger fas fa-bars"></i></a>
     </header>
@@ -84,35 +84,44 @@
         </button>
       </form>
       <p class="personal-check">
-        <input type="checkbox" name="" value="" />Я согласен на обработку
-        персональных данных
+        <input
+          id="checkbox"
+          class="checkbox"
+          type="checkbox"
+          name=""
+          value=""
+        /><label for="checkbox"
+          >Я согласен на обработку персональных данных</label
+        >
       </p>
     </div>
     <div class="feedback center">
-      <a href="#"><i class="arrow-left fas fa-chevron-left"></i></a>
-      <div class="feedback__wrapper">
-        <h1 class="title">ОТЗЫВЫ</h1>
-        <div class="review">
-          <div class="review__img">
-            <img src="img/feedback1.png" alt="author" />
+      <h1 class="title">ОТЗЫВЫ</h1>
+      <div class="feedback__container">
+        <a href="#"><i class="arrow-left fas fa-chevron-left"></i></a>
+        <div class="feedback__wrapper">
+          <div class="review">
+            <div class="review__img">
+              <img src="img/feedback1.png" alt="author" />
+            </div>
+            <div class="review__author">
+              <span class="name">Дарья</span>
+              <span class="company">La Intuicion</span>
+              <span class="author__info">Посылка: товары</span>
+              <span class="author__info">Откуда: Москва</span>
+              <span class="author__info">Куда: Нижневартовск</span>
+            </div>
           </div>
-          <div class="review__author">
-            <span class="name">Дарья</span>
-            <span class="company">La Intuicion</span>
-            <span class="author__info">Посылка: товары</span>
-            <span class="author__info">Откуда: Москва</span>
-            <span class="author__info">Куда: Нижневартовск</span>
+          <div class="comment">
+            Отличный и качественный сервис. Долго искали курьерскую службу для
+            доставки наших товаров. Решили попробовать и были приятно удивлены,
+            что помимо удобного сайта, компания предоставляет доступ в личный
+            кабинет, где реализованы многие наши потребности (ведение адресной
+            базы, выбор и вызов курьера в пару кликов).
           </div>
         </div>
-        <div class="comment">
-          Отличный и качественный сервис. Долго искали курьерскую службу для
-          доставки наших товаров. Решили попробовать и были приятно удивлены,
-          что помимо удобного сайта, компания предоставляет доступ в личный
-          кабинет, где реализованы многие наши потребности (ведение адресной
-          базы, выбор и вызов курьера в пару кликов).
-        </div>
+        <a href="#"><i class="arrow-right fas fa-chevron-right"></i></a>
       </div>
-      <a href="#"><i class="arrow-right fas fa-chevron-right"></i></a>
     </div>
     <div class="pros center">
       <h1 class="pros__title">НАШИ ПРЕИМУЩЕСТВА</h1>
@@ -155,5 +164,113 @@
         </div>
       </div>
     </div>
+    <div class="guarantee center">
+      <h1>НАШИ ГАРАНТИИ</h1>
+      <div class="guarantee__container">
+        <a href="#"><i class="arrow-left fas fa-chevron-left"></i></a>
+        <div class="guarantee__wrapper">
+          <div class="image-title">
+            <div class="img__wrapper">
+              <img src="img/guarant.png" alt="guarant" />
+            </div>
+            <h3>Страховка отправлений</h3>
+          </div>
+          <p>
+            Контроль работы курьеров в онлайн режиме. Страхование по запросу
+            клиента Каждый куръер находится под пристальным вниманием менеджеров
+            SendIt
+          </p>
+        </div>
+        <a href="#"><i class="arrow-right fas fa-chevron-right"></i></a>
+      </div>
+      <button class="button guarantee__button">подробнее</button>
+    </div>
+    <div class="faq center">
+      <h1>ОСТАЛИСЬ СОМНЕНИЯ?</h1>
+      <div class="faq__question">
+        <p>
+          Вы не можете доставить посылку за границу
+        </p>
+        <a href="#"><i class="faq-chevron fas fa-chevron-down"></i></a>
+      </div>
+      <div class="faq__question">
+        <p>
+          Вы не можете доставить посылку за границу
+        </p>
+        <a href="#"><i class="faq-chevron fas fa-chevron-down"></i></a>
+      </div>
+      <div class="faq__question">
+        <p>
+          Вы не можете доставить посылку за границу
+        </p>
+        <a href="#"><i class="faq-chevron fas fa-chevron-down"></i></a>
+      </div>
+      <div class="faq__question">
+        <p>
+          Вы не можете доставить посылку за границу
+        </p>
+        <a href="#"><i class="faq-chevron fas fa-chevron-down"></i></a>
+      </div>
+      <div class="faq__question">
+        <p>
+          Вы не можете доставить посылку за границу
+        </p>
+        <a href="#"><i class="faq-chevron fas fa-chevron-down"></i></a>
+      </div>
+      <div class="faq__question">
+        <p>
+          Вы не можете доставить посылку за границу
+        </p>
+        <a href="#"><i class="faq-chevron fas fa-chevron-down"></i></a>
+      </div>
+    </div>
+    <div class="partners center">
+      <a href="#"><i class="arrow-left fas fa-chevron-left"></i></a>
+      <div class="logos">
+        <img src="img/dpd.png" alt="dpd" />
+        <img src="img/dpd.png" alt="dpd" />
+        <img src="img/dpd.png" alt="dpd" />
+        <img src="img/dpd.png" alt="dpd" />
+        <img src="img/dpd.png" alt="dpd" />
+        <img src="img/dpd.png" alt="dpd" />
+      </div>
+      <a href="#"><i class="arrow-right fas fa-chevron-right"></i></a>
+    </div>
+    <footer class="footer center">
+      <h3>ОСТАЛИСЬ ВОПРОСЫ?</h3>
+      <form>
+        <input
+          type="tel"
+          class="callback__phone"
+          pattern="(\+?\d[- .]*){7,13}"
+          placeholder="Ваш телефон"
+        />
+        <button type="submit" class="button footer__button">
+          заказать звонок
+        </button>
+      </form>
+      <p class="footer__personal-check">
+        <input
+          id="footer__checkbox"
+          class="footer__checkbox"
+          type="checkbox"
+          name=""
+          value=""
+        /><label for="footer__checkbox"
+          >Я согласен на обработку персональных данных</label
+        >
+      </p>
+      <div class="footer__nav">
+        <div class="logo footer__logo">
+          <a href="index.html"><img src="img/logo-color.png" alt="logo"/></a>
+        </div>
+        <a href="#" class="footer__burger"
+          ><i class="footer__b burger fas fa-bars"></i
+        ></a>
+      </div>
+      <p class="footer__copywrite">
+        © Сами копипастим и вам разрешаем 2020 Задизайнено мной
+      </p>
+    </footer>
   </body>
 </html>

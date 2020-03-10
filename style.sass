@@ -22,12 +22,12 @@
   flex-wrap: wrap
   justify-content: center
   h1
-    font-size: 32px
-    line-height: 38px
+    // font-size: 32px
+    // line-height: 38px
     margin-top: 21px
     margin-bottom: 8px
   h2
-    font-size: 24px
+    // font-size: 24px
     margin-bottom: 8px
   &__button
     margin-bottom: 27px
@@ -64,10 +64,10 @@
   &__button
     margin-bottom: 17px
   h3
-    font-size: 18px
+    // font-size: 18px
     margin-bottom: 10px
   p
-    font-size: 12px
+    // font-size: 12px
     margin-bottom: 12px
     padding: 0 21px
 
@@ -84,13 +84,13 @@
   justify-content: center
   flex-direction: column
   h3
-    font-size: 26px
-    line-height: 21px
+    // font-size: 26px
+    // line-height: 21px
     margin-bottom: 8px
     padding: 0 20px
   p
-    font-size: 14px
-    line-height: 17px
+    // font-size: 14px
+    // line-height: 17px
     margin-bottom: 42px
     padding: 0 20px
   &__img-1
@@ -120,8 +120,8 @@
   padding-bottom: 23px
 
   h2
-    font-size: 24px
-    line-height: 29px
+    // font-size: 24px
+    // line-height: 29px
     margin-bottom: 9px
     padding: 0 20px
 
@@ -132,15 +132,15 @@
   background-color: $blue
   padding-top: 32px
   h1
-    font-size: 28px
-    line-height: 34px
+    // font-size: 28px
+    // line-height: 34px
     text-transform: uppercase
     color: white
     margin-bottom: 11px
     padding: 0 20px
   p
-    font-size: 14px
-    line-height: 13px
+    // font-size: 14px
+    // line-height: 13px
     color: white
     margin-bottom: 14px
     padding: 0 20px
@@ -157,32 +157,59 @@
   &__button
     background-color: $orange
     margin-bottom: 7px
+    &:hover
+      background-color: $light-orange
   .personal-check
       font-size: 10px
       color: white
-      input
+      display: flex
+      align-items: center
+      .checkbox
+        position: absolute
+        z-index: -1
+        opacity: 0
+        margin: 10px 0 0 20px
+      .checkbox + label
+        position: relative
+        padding: 0 0 0 15px
+        cursor: pointer
+      .checkbox + label:before
+        content: ""
+        position: absolute
+        top: 0px
+        left: 0
+        width: 9px
+        height: 9px
         background-color: $blue
         border: 1px solid white
+      .checkbox:checked + label:before
+        background-color: $orange
 
 .feedback
   display: flex
-  justify-content: center
+  flex-wrap: wrap
   align-items: center
   padding-bottom: 20px
-  .arrow-left
-    margin-left: 22px
-    margin-right: 8px
-    color: $grey
-  .arrow-right
-    margin-right: 12px
-    margin-left: 8px
-    color: $grey
+
+.feedback__container
+  display: flex
+  align-items: center
+.arrow-left
+  margin-left: 22px
+  margin-right: 8px
+  color: $grey
+.arrow-right
+  margin-right: 12px
+  margin-left: 8px
+  color: $grey
 
 .feedback__wrapper
   display: flex
   flex-wrap: wrap
 .title
-  font-size: 28px
+  // font-size: 28px
+  margin-bottom: 10px
+  margin-left: 20px
 
 .review
   display: flex
@@ -209,8 +236,8 @@
   flex-wrap: wrap
   background-color: $light-grey
   &__title
-    font-size: 28px
-    line-height: 34px
+    // font-size: 28px
+    // line-height: 34px
     margin-left: 20px
 
 .pros__container
@@ -235,3 +262,132 @@
     font-size: 10px
     font-weight: lighter
     text-align: center
+
+.guarantee
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  &__container
+    display: flex
+    align-items: baseline
+  h1
+    margin: 20px 20px
+  &__wrapper
+    display: flex
+    flex-wrap: wrap
+
+.img__wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $light-grey
+  width: 62px
+  height: 62px
+  border-radius: 50%
+  margin-right: 10px
+
+.image-title
+  display: flex
+  align-items: center
+  margin-bottom: 15px
+  h3
+    width: 100px
+
+.guarantee__button
+  margin: 20px 0
+
+.faq
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  background-color: $light-blue
+  padding-bottom: 25px
+  h1
+    margin-top: 20px
+    margin-left: 20px
+  &__question
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 80%
+    height: 80px
+    border-radius: 32px
+    background-color: white
+    padding: 0 20px
+    margin: 5px 0
+
+.faq-chevron
+  color: $blue
+  margin-left: 10px
+
+.partners
+  display: flex
+  align-items: center
+  .logos
+      width: 75%
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      padding: 20px 0
+
+.footer
+  display: flex
+  flex-wrap: wrap
+  background-color: $light-grey
+  h3
+    margin: 12px 20px
+  form
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    input
+      margin-bottom: 10px
+      height: 40px
+      background-color: $light-grey
+      &::placeholder
+        color: black
+  .footer__checkbox
+    position: absolute
+    z-index: -1
+    opacity: 0
+    margin: 10px 0 0 20px
+  .footer__checkbox + label
+    position: relative
+    padding: 0 0 0 15px
+    cursor: pointer
+    font-size: 10px
+  .footer__checkbox + label:before
+    content: ""
+    position: absolute
+    top: 0px
+    left: 0
+    width: 9px
+    height: 9px
+    background-color: $light-grey
+    border: 1px solid white
+  .footer__checkbox:checked + label:before
+    background-color: $blue
+
+.footer__button
+  margin-bottom: 12px
+.footer__personal-check
+  margin: 0px 0px 10px 20px 
+
+.footer__nav
+  border-top: 1px solid $grey
+  border-bottom: 1px solid $grey
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  .footer__logo
+    margin: 20px
+  .footer__burger
+    padding: 20px
+    .footer__b
+      color: black
+
+.footer__copywrite
+  font-size: 10px
+  font-weight: 400
+  margin: 18px 0px 10px 20px
