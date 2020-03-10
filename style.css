@@ -574,3 +574,9 @@ a:visited {
   font-weight: 400;
   margin: 18px 0px 10px 20px;
 }
+
+@media screen and (min-width: 768px) {
+  .center {
+    padding: 0 calc(50% - (768px / 2));
+  }
+}
