@@ -205,13 +205,16 @@ a:visited {
   justify-content: center;
   flex-wrap: wrap;
   background-color: #E1E1E1;
-  padding-top: 23px;
-  padding-bottom: 23px;
 }
 
 .mini-action h2 {
+  margin-top: 23px;
   margin-bottom: 9px;
   padding: 0 20px;
+}
+
+.mini-action__button {
+  margin-bottom: 23px;
 }
 
 .callback {
@@ -219,13 +222,13 @@ a:visited {
   flex-wrap: wrap;
   justify-content: center;
   background-color: #008DCD;
-  padding-top: 32px;
 }
 
 .callback h1 {
   text-transform: uppercase;
   color: white;
   margin-bottom: 11px;
+  margin-top: 32px;
   padding: 0 20px;
 }
 
@@ -366,6 +369,7 @@ a:visited {
 
 .pros__title {
   margin-left: 20px;
+  margin-top: 37px;
 }
 
 .pros__container {
