@@ -14,25 +14,89 @@
   </head>
   <body>
     <header class="header center">
-      <div class="logo header__logo">
-        <a href="index.html"><img src="img/logo-white.png" alt="logo"/></a>
+      <div class="header__container">
+        <div class="logo header__logo">
+          <a href="index.html"><img src="img/logo-white.png" alt="logo"/></a>
+        </div>
+        <input type="checkbox" id="switcher" name="" value="" />
+        <label for="switcher" class="open"
+          ><i class="burger fas fa-bars"></i
+        ></label>
+        <nav class="navigation">
+          <div class="mobile-menu__logo logo header__logo">
+            <a href="index.html"><img src="img/logo-color.png" alt="logo"/></a>
+          </div>
+          <ul class="menu">
+            <li class="menu__list">
+              <a href="" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link">Описание</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link">Преимущества</a>
+            </li>
+            <li class="menu__list"><a href="" class="menu__link">Отзывы</a></li>
+            <li class="menu__list">
+              <a href="" class="menu__link">Партнёры</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link">Гарантии</a>
+            </li>
+            <li class="menu__list"><a href="" class="menu__link">FAQ</a></li>
+          </ul>
+          <h3 class="mobile-menu__h3">ОСТАЛИСЬ ВОПРОСЫ?</h3>
+          <form class="mobile-menu__form">
+            <input
+              type="tel"
+              class="mobile-menu__phone"
+              pattern="(\+?\d[- .]*){7,13}"
+              placeholder="Ваш телефон"
+            />
+            <button type="submit" class="button mobile-menu__button">
+              заказать звонок
+            </button>
+            <p class="mobile-menu__personal-check">
+              <input
+                id="mobile-menu__checkbox"
+                class="mobile-menu__checkbox"
+                type="checkbox"
+                name=""
+                value=""
+              /><label for="mobile-menu__checkbox"
+                >Я согласен на обработку персональных данных</label
+              >
+            </p>
+          </form>
+          <div class="social-wrapper">
+            <div class="social-item"><i class="fab fa-vk"></i></div>
+            <div class="social-item"><i class="fab fa-instagram"></i></div>
+            <div class="social-item"><i class="fab fa-facebook-f"></i></div>
+          </div>
+          <label for="switcher" class="close"
+            ><i class="cross fas fa-times"></i
+          ></label>
+        </nav>
       </div>
-      <a href="#" class="header__burger"><i class="burger fas fa-bars"></i></a>
+      <div class="action">
+        <h1>ПРИДУМАЙТЕ <br />ЧТО ОТПРАВИТЬ</h1>
+        <h2>А посылка доедет сама</h2>
+        <button class="button action__button">отправить посылку</button>
+      </div>
     </header>
-    <div class="action center">
-      <h1>ПРИДУМАЙТЕ <br />ЧТО ОТПРАВИТЬ</h1>
-      <h2>А посылка доедет сама</h2>
-      <button class="button action__button">отправить посылку</button>
-    </div>
+
     <div class="about center">
       <div class="about__img"></div>
-      <h3>Мы – агрегатор служб доставки</h3>
-      <p>
-        С нами удобно вам, вашим клиентам и курьерским службам. Для вас наши
-        услуги бесплатны, так как мы получаем бонусы от служб доставок за
-        предоставленный объем заказов, а вы получаете надежный сервис в подарок!
-      </p>
-      <button class="button about__button">отправить посылку</button>
+      <div class="about__content">
+        <h3>Мы – агрегатор служб доставки</h3>
+        <p>
+          С нами удобно вам, вашим клиентам и курьерским службам. Для вас наши
+          услуги бесплатны, так как мы получаем бонусы от служб доставок за
+          предоставленный объем заказов, а вы получаете надежный сервис в
+          подарок!
+        </p>
+        <button class="button about__button">отправить посылку</button>
+      </div>
     </div>
     <div class="steps center">
       <div class="step">
@@ -70,8 +134,10 @@
       <button class="button mini-action__button">отправить посылку</button>
     </div>
     <div class="callback center">
-      <h1>хотите мы вам перезвоним?</h1>
-      <p>Закажите звонок, и менеджер вам всё расскажет и объяснит</p>
+      <div class="callback__content">
+        <h1>хотите мы вам перезвоним?</h1>
+        <p>Закажите звонок, и менеджер вам всё расскажет и объяснит</p>
+      </div>
       <form>
         <input
           type="tel"
@@ -100,6 +166,27 @@
       <div class="feedback__container">
         <a href="#"><i class="arrow-left fas fa-chevron-left"></i></a>
         <div class="feedback__wrapper">
+          <div class="review">
+            <div class="review__img">
+              <img src="img/feedback1.png" alt="author" />
+            </div>
+            <div class="review__author">
+              <span class="name">Дарья</span>
+              <span class="company">La Intuicion</span>
+              <span class="author__info">Посылка: товары</span>
+              <span class="author__info">Откуда: Москва</span>
+              <span class="author__info">Куда: Нижневартовск</span>
+            </div>
+          </div>
+          <div class="comment">
+            Отличный и качественный сервис. Долго искали курьерскую службу для
+            доставки наших товаров. Решили попробовать и были приятно удивлены,
+            что помимо удобного сайта, компания предоставляет доступ в личный
+            кабинет, где реализованы многие наши потребности (ведение адресной
+            базы, выбор и вызов курьера в пару кликов).
+          </div>
+        </div>
+        <div class="feedback__wrapper second-comment">
           <div class="review">
             <div class="review__img">
               <img src="img/feedback1.png" alt="author" />
