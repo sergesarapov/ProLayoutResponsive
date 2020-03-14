@@ -823,9 +823,15 @@ p {
   .second-comment {
     display: flex;
   }
+  .pros {
+    justify-content: flex-start;
+  }
   .pros__container {
     width: 100%;
     justify-content: space-around;
+  }
+  .guarantee {
+    justify-content: flex-start;
   }
   .guarantee__container {
     width: 100%;
@@ -847,6 +853,7 @@ p {
     width: inherit;
   }
   .faq {
+    justify-content: flex-start;
     padding-bottom: 39px;
   }
   .faq__question {
