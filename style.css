@@ -89,6 +89,7 @@ p {
     transition: all 0.4s;
     display: flex;
     flex-direction: column;
+    z-index: 1;
   }
   .navigation .close {
     position: absolute;
@@ -173,6 +174,9 @@ p {
     background-color: #008DCD;
     border-radius: 50%;
     color: white;
+  }
+  .footer__menu {
+    display: none;
   }
 }
 
@@ -544,6 +548,10 @@ p {
   flex-wrap: wrap;
 }
 
+.guarantee__wrapper-tablet {
+  display: none;
+}
+
 .img__wrapper {
   display: flex;
   justify-content: center;
@@ -688,11 +696,7 @@ p {
   margin: 20px;
 }
 
-.footer__nav .footer__burger {
-  padding: 20px;
-}
-
-.footer__nav .footer__burger .footer__b {
+.footer__nav .footer__b {
   color: black;
 }
 
@@ -816,5 +820,73 @@ p {
   .pros__container {
     width: 100%;
     justify-content: space-around;
+  }
+  .guarantee__container {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .guarantee__wrapper {
+    width: 220px;
+  }
+  .guarantee__wrapper-tablet {
+    display: flex;
+    margin-left: 20px;
+  }
+  .image-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .image-title h3 {
+    font-size: 18px;
+    width: inherit;
+  }
+  .faq {
+    padding-bottom: 39px;
+  }
+  .faq__question {
+    width: 90%;
+    height: 48px;
+  }
+  .partners {
+    justify-content: space-between;
+  }
+  .partners .logos {
+    justify-content: space-around;
+  }
+  .footer_callback-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer_callback-wrapper form {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_callback-wrapper form .footer__button {
+    width: 220px;
+    margin-left: 20px;
+  }
+  .footer_callback-wrapper form .callback__phone {
+    height: 47px;
+    width: 180px;
+  }
+  .footer_callback-wrapper form p {
+    margin-right: 246px;
+  }
+  .footer__menu .menu__list a {
+    color: black;
+  }
+  .footer__menu li:last-child {
+    padding-right: 10px;
+  }
+  .footer__menu .menu__list {
+    padding-right: 25px;
+  }
+  .footer__copywrite-right {
+    font-size: 10px;
+    font-weight: 400;
+    margin: 18px 0px 10px 350px;
   }
 }
