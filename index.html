@@ -103,21 +103,21 @@
       </div>
     </div>
     <div class="steps center">
-      <div class="step">
-        <div class="step__img-1"></div>
+      <div class="step step-1">
+        <div class="step__img step__img-1"></div>
         <h3>Шаг 1</h3>
         <p>Придумайте что и кому отправить</p>
       </div>
       <div class="step">
-        <div class="step__img-2"></div>
+        <div class="step__img step__img-2"></div>
         <h3>Шаг 2</h3>
         <p>
           Создайте заявку на сайте SendIt - Ваш персональный менеджер позвонит и
           подтвердит запрос, уточнит все необходимые данные
         </p>
       </div>
-      <div class="step">
-        <div class="step__img-3"></div>
+      <div class="step step-3">
+        <div class="step__img step__img-3"></div>
         <h3>Шаг 3</h3>
         <p>
           К Вам приезжает курьер, забирает посылку, Вы подписываете один
@@ -125,7 +125,7 @@
         </p>
       </div>
       <div class="step">
-        <div class="step__img-4"></div>
+        <div class="step__img step__img-4"></div>
         <h3>Шаг 4</h3>
         <p>
           Вы ждёте подтверждения доставки, слова радости и благодарности от
@@ -363,8 +363,8 @@
         <form>
           <input
             type="tel"
-            class="callback__phone"
-            pattern="(+?d[- .]*){7,13}"
+            class="footer__phone"
+            pattern="(\+?\d[- .]*){7,13}"
             placeholder="Ваш телефон"
           />
           <button type="submit" class="button footer__button">
@@ -411,12 +411,14 @@
           <li class="menu__list"><a href="" class="menu__link">FAQ</a></li>
         </ul>
       </div>
-      <p class="footer__copywrite">
-        © Сделано в рамках прохождения курса на Geek Brains
-      </p>
-      <p class="footer__copywrite-right">
-        2020 Сверстано Сараповым
-      </p>
+      <div class="copywrite__container">
+        <p class="footer__copywrite">
+          © Сделано в рамках прохождения курса на Geek Brains
+        </p>
+        <p class="footer__copywrite-right">
+          2020 Сверстано Сараповым
+        </p>
+      </div>
     </footer>
   </body>
 </html>

@@ -264,7 +264,7 @@
     // line-height: 13px
     color: white
     margin-bottom: 14px
-    padding: 0 20px
+    padding: 0 18px
   &__phone
     padding: 0 20px
     display: flex
@@ -387,6 +387,8 @@
     width: 86px
     height: 86px
     border-radius: 50%
+    img
+      width: 58px
   .item-text
     font-size: 10px
     font-weight: lighter
@@ -417,6 +419,8 @@
   height: 62px
   border-radius: 50%
   margin-right: 10px
+  img
+    width: 28px
 
 .image-title
   display: flex
@@ -446,11 +450,13 @@
     justify-content: space-between
     align-items: center
     width: 80%
-    height: 80px
+    // height: 80px
     border-radius: 32px
     background-color: white
     padding: 0 20px
     margin: 5px 0
+    p
+      margin: 32px 0 32px 0
 
 .faq-chevron
   color: $blue
@@ -503,11 +509,21 @@
     border: 1px solid white
   .footer__checkbox:checked + label:before
     background-color: $blue
+.footer__phone
+    padding: 0 20px
+    display: flex
+    align-items: center
+    border: 1px solid #FFFFFF
+    border-radius: 30px
+    width: 236px
+    height: 48px
+    margin-bottom: 9px
+    outline: none
 
 .footer__button
   margin-bottom: 12px
 .footer__personal-check
-  margin: 0px 0px 10px 20px
+  margin: 0px 0px 10px 0px
 
 .footer__nav
   border-top: 1px solid $grey
@@ -521,15 +537,25 @@
   .footer__b
     color: black
 
+.copywrite__container
+  display: flex
+  justify-content: space-between
+  align-items: center
+
 .footer__copywrite
   font-size: 10px
-  font-weight: 400
-  margin: 18px 0px 10px 20px
+  margin-left: 20px
+  // font-weight: 400
+  // margin: 18px 0px 10px 20px
 .footer__copywrite-right
   font-size: 10px
-  font-weight: 400
-  margin: 0px 0px 10px 20px
+  text-align: right
+  margin-right: 20px
+  // font-weight: 400
+  // margin: 0px 0px 10px 20px
+
 
 //END OF CSS**********************************************************
 
 @import "tablet"
+@import "desktop"
