@@ -4,7 +4,7 @@
 }
 
 html {
-  font-family: myriad-pro,sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -14,27 +14,27 @@ html {
 }
 
 h1 {
-  font-family: myriad-pro,sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 28px;
   line-height: 34px;
   color: #363636;
 }
 
 h2 {
-  font-family: myriad-pro,sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   line-height: 29px;
   color: #363636;
 }
 
 h3 {
-  font-family: myriad-pro,sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 22px;
 }
 
 p {
-  font-family: myriad-pro,sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
@@ -444,6 +444,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-self: flex-start;
 }
 
 .second-comment {
@@ -589,6 +590,12 @@ p {
 .faq h1 {
   margin-top: 20px;
   margin-left: 20px;
+}
+
+.faq__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .faq__question {
@@ -792,7 +799,7 @@ p {
     padding-top: 50px;
   }
   .steps .step {
-    width: 50%;
+    width: 45%;
     display: block;
   }
   .steps .step p {
@@ -804,6 +811,7 @@ p {
   }
   .mini-action__button {
     margin-bottom: 0;
+    margin-right: 20px;
   }
   .callback {
     flex-wrap: nowrap;
@@ -811,6 +819,7 @@ p {
   }
   .callback form {
     margin-top: 30px;
+    margin-right: 20px;
   }
   .feedback {
     flex-direction: column;
@@ -840,6 +849,9 @@ p {
   .guarantee__container {
     width: 100%;
     justify-content: space-around;
+  }
+  .guarantee__container a {
+    display: none;
   }
   .guarantee__wrapper {
     width: 215px;
